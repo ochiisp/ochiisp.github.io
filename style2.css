@@ -1,0 +1,268 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow:hidden;
+}
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+}
+p{
+  color: white;
+  font-size: 6vw;
+  font-family: "Space Mono", sans-serif, monospace;
+  margin: 0rem;
+  text-transform: uppercase;
+}
+.letter{
+  display: inline-block;
+}
+.fancyword1{
+  display:flex;
+  justify-content: space-between;
+  padding: 40px;
+  opacity:0.2;
+}
+.fancyword2{
+  display:flex;
+  justify-content: space-between;
+  padding: 40px;
+  opacity:0.2;
+}
+.fancyword1:hover{
+  opacity:1
+}
+.fancyword2:hover{
+  opacity:1;
+}
+.fancyword1:hover > .letter:nth-child(1){
+  transform: translate(-80%, -60%) rotate(-54deg)
+}
+.fancyword1:hover > .letter:nth-child(2){
+  transform: translate(-60%, -50%) rotate(11deg)
+}
+.fancyword1:hover > .letter:nth-child(3){
+  transform: translate(-10%, 20%) rotate(1deg)
+}
+.fancyword1:hover > .letter:nth-child(4){
+  transform: translate(40%, 40%) rotate(6deg)
+}
+.fancyword1:hover > .letter:nth-child(5){
+  transform: translate(-20%, -60%) rotate(-9deg)
+}
+.fancyword1:hover > .letter:nth-child(6){
+  transform: translate(-20%, -50%) rotate(28deg)
+}
+.fancyword1:hover > .letter:nth-child(7){
+  transform: translate(40%, 20%) rotate(-8deg)
+}
+.fancyword1:hover > .letter:nth-child(8){
+  transform: translate(-40%, -50%) rotate(-60deg)
+}
+.fancyword1:hover > .letter:nth-child(9){
+  transform: translate(-20%, -30%) rotate(50deg)
+}
+.fancyword1:hover > .letter:nth-child(10){
+  transform: translate(-40%, 30%) rotate(62deg)
+}
+.fancyword1:hover > .letter:nth-child(11){
+  transform: translate(-20%, -60%) rotate(81deg)
+}
+.fancyword1:hover > .letter:nth-child(12){
+  transform: translate(-20%, 50%) rotate(-53deg)
+}
+.fancyword1:hover > .letter:nth-child(13){
+  transform: translate(40%, -60%) rotate(55deg)
+}
+
+.fancyword1 > .letter {
+  transition:transform 350ms ease;
+}
+.fancyword1:hover > .letter {
+  transition:transform 350ms ease;
+}
+.fancyword2 > .letter2 {
+  transition:transform 350ms ease;
+}
+.fancyword2:hover > .letter2 {
+  transition:transform 350ms ease;
+}
+#text{
+  width: 80vw;
+  padding: 18vw 10vw;
+}
+.fancyword2:hover > .letter2:nth-child(1){
+  transform: translate(-29%, 20%) rotate(11deg)
+}
+.fancyword2:hover > .letter2:nth-child(2){
+  transform: translate(-3%, -48%) rotate(-8deg)
+}
+.fancyword2:hover > .letter2:nth-child(3){
+  transform: translate(-47%, 27%) rotate(28deg)
+}
+.fancyword2:hover > .letter2:nth-child(4){
+  transform: translate(-34%, -29%) rotate(-13deg)
+}
+.fancyword2:hover > .letter2:nth-child(5){
+  transform: translate(-20%, -60%) rotate(-9deg)
+}
+.fancyword2:hover > .letter2:nth-child(6){
+  transform: translate(-20%, -50%) rotate(28deg)
+}
+.fancyword2:hover > .letter2:nth-child(7){
+  transform: translate(-70%, -30%) rotate(-18deg)
+}
+.fancyword2:hover > .letter2:nth-child(8){
+  transform: translate(-40%, -30%) rotate(-18deg)
+}
+.fancyword2:hover > .letter2:nth-child(9){
+  transform: translate(-20%, 20%) rotate(30deg)
+}
+.fancyword2:hover > .letter2:nth-child(10){
+transform: translate(0%, -20%) rotate(14deg)
+}
+.fancyword2:hover > .letter2:nth-child(11){
+  transform: translate(-20%, -40%) rotate(8deg)
+}
+.fancyword2:hover > .letter2:nth-child(12){
+  transform: translate(-20%, 50%) rotate(-18deg)
+}
+.fancyword2:hover > .letter2:nth-child(13){
+  transform: translate(-20%, -20%) rotate(23deg)
+}
+.fancyword2:hover > .letter2:nth-child(14){
+  transform: translate(-20%, -20%) rotate(23deg)
+}
+.fancyword2:hover > .letter2:nth-child(15){
+  transform: translate(20%, -10%) rotate(18deg)
+}
+.fancyword2:hover > .letter2:nth-child(16){
+  transform: translate(-20%, -10%) rotate(8deg)
+}
+.fancyword2:hover > .letter2:nth-child(17){
+  transform: translate(-20%, -20%) rotate(23deg)
+}
+.fancyword2:hover > .letter2:nth-child(18){
+  transform: translate(17%, 27%) rotate(-28deg)
+}
+.fancyword2:hover > .letter2:nth-child(19){
+  transform: translate(50%, -30%) rotate(-18deg)
+}
+body[data-nav="true"] > main {
+  transform: translateY(-10%);
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#nav-links {  
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-top: clamp(1rem, 1vw, 1rem);
+  padding: 0rem clamp(1rem, 2vw, 2rem);
+  transform: translateY(70%) scale(0.9);
+  transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
+}
+
+body[data-nav="true"] > nav > #nav-links {
+  transform: translateY(0%) scale(1);
+}
+
+#nav-links > .nav-link {
+  text-decoration: none;
+}
+
+#nav-links > .nav-link > .nav-link-label {
+  color: white;
+  font-size: 2rem;
+  margin: 0rem;
+  text-transform: uppercase;
+}
+#nav-toggle {
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  bottom: 6rem;
+  transform: translateX(-50%);
+  background-color: rgb(182, 142, 113);
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
+  cursor: pointer;
+  transition: transform, background-color;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+#nav-toggle:hover {
+  transform: translateX(-50%) scale(1.04);
+}
+
+#nav-toggle:active {
+  transform: translateX(-50%) scale(0.96);
+}
+
+body[data-nav="true"] > #nav-toggle {
+  background-color: rgb(85, 130, 149);
+}
+
+body:not([data-nav="true"]) > #nav-toggle:hover > .open {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#nav-toggle > i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  color: rgb(246, 231, 224);
+  font-size: 1.75rem;
+  opacity: 0;
+  transition: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+body[data-nav="true"] > #nav-toggle > .close {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+main {
+  background-color: #060606;
+  background-position: center 0%;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
+}
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: white;
+  white-space: nowrap;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  margin: 0rem;
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  translate: -50% -50%;
+  z-index: 3;
+}
+h1:hover{
+  background-color: white;
+  color:black;
+}
