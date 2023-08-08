@@ -93,7 +93,7 @@ main {
     position: fixed;
     z-index: 3;
     left: 50%;
-    bottom: 6rem;
+    bottom: 2rem;
     transform: translateX(-50%);
     background-color: rgb(182, 142, 113);
     border: none;
