@@ -62,8 +62,8 @@ h3{
 #blob{
   background: linear-gradient(
   to right,
-  aquamarine,
-  mediumpurple);
+  rgb(233, 77, 37),
+  rgb(156, 123, 15));
   height:500px;
   width:500px;
   position: absolute;
