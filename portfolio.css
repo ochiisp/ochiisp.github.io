@@ -111,10 +111,10 @@ main {
     font-size: clamp(3rem, 10vw, 10rem);
     color: white;
     padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-  margin: 0rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    margin: 0rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
   }
